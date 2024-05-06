@@ -1,0 +1,16 @@
+#Assign the volume to PODs
+apiVersion: v1 
+kind: Pod
+metadata:
+  name: my-pod-volume
+spec:
+  containers:
+  - name: my-container 
+    image: nginx
+  volumeMounts:
+  - name: my-volume
+    mountPath: /path/to/mount
+  volumes:
+  - name: my-volume 
+    hostPath:
+      path: /host/path

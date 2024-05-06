@@ -1,0 +1,14 @@
+#This is PVC manifest file
+apiVersion: v1 
+kind: PersistentVolumeClime
+metadata:
+  name: my-pvc 
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: standard
+
+  #To check PVC status "kubectl describe pvc <pvc-name>"

@@ -1,0 +1,13 @@
+#This is sidecar container
+
+apiVersion: v1 
+kind: Pod
+metadata:
+  name: sidecar-container-file
+spec:
+  containers:
+  - name: main-container
+    image: main-image
+
+  - name: sidecar-container
+    image: sidecar-image

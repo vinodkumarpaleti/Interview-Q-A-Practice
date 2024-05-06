@@ -1,0 +1,27 @@
+#This file is for Horizontal POD Auto scalling
+apiVersion: autoacalling/v2beta2
+kind: HorizontalAutoScaler
+metadata:
+ name: my-app-hpa 
+spec:
+ scaleTargetRef:
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: my-deployment
+  spec:
+    stratagy:
+      type: RollingUpdate
+      rollingUpdate:
+          maxUnavailable: 1
+          maxSurge: 1
+          minReplicas: 2
+          maxReplicas: 10
+          metrics:
+          - type: Resource 
+            resource:
+              name: cpu 
+              target: 
+                type: Utilization
+                averageUtilization: 70
+          

@@ -1,0 +1,24 @@
+## To list out last created container
+
+```
+docker ps -l 
+```
+## To list the only ID's of running containers
+```
+docker ps --quit
+OR
+docker ps -a
+``` 
+## Expose Port
+```
+docker run -itd -p 8080:80 image
+```
+## Run the containers fron image
+```
+docker run -i -p 80:8080 --name container1 my-image
+docker run -i -p 80:8081 --name conatainer2 my-image
+```
+## To get docker logs
+```
+docker logs <container-id>
+```

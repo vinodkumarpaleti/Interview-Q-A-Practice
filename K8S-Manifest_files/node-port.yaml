@@ -1,0 +1,17 @@
+#This is Kubernates NodePort service file
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-node-port-service
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    tagetPort: 8080
+    nodePort: 30001
+    selector:
+      app: my-app
+
+      #Accessing the nodePort service "http://node-ip:nodePort"
+      # nodePort Range is 30000-32767 by default
