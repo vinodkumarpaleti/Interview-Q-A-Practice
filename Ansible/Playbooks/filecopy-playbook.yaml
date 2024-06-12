@@ -1,0 +1,8 @@
+ # A playbook to copy files from the local machine to remote hosts:
+     - name: Copy Files to Remote Hosts
+       hosts: your_target_hosts
+       tasks:
+         - name: Copy files
+           copy:
+             src: /path/to/local/file.txt
+             dest: /path/on/remote/file.txt

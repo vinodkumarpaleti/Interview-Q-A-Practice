@@ -1,0 +1,19 @@
+- name: Deploy Docker Container
+  hosts: your_target_hosts
+  tasks:
+         - name: Install Docker
+           become: yes
+           apt:
+             name: docker.io
+             state: present
+         - name: Pull Docker image
+           become: yes
+           docker_image:
+             name: nginx:latest
+         - name: Run Docker container
+           become: yes
+           docker_container:
+             name: my_nginx
+             image: nginx:latest
+             ports:
+               - "80:80"

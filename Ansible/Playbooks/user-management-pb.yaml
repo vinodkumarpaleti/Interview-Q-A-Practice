@@ -1,0 +1,12 @@
+ - name: Manage Users
+   hosts: your_target_hosts
+   tasks:
+         - name: Add user
+           user:
+             name: john_doe
+             state: present
+         - name: Add user to sudoers
+           become: yes
+           lineinfile:
+             dest: /etc/sudoers
+             line: 'john_doe ALL=(ALL:ALL) NOPASSWD: ALL'
