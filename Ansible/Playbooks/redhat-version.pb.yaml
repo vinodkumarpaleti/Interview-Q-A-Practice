@@ -1,0 +1,10 @@
+- name: Print Red Hat Version
+  hosts: your_target_servers
+  become: yes  # To execute commands with elevated privileges
+  tasks:
+    - name: Get Red Hat Version
+      command: cat /etc/redhat-release
+      register: redhat_version_output
+    - name: Display Red Hat Version
+      debug:
+        msg: "Red Hat version on {{ inventory_hostname }} is {{ redhat_version_output.stdout }}"
