@@ -24,3 +24,23 @@ git clone -b master http://github.com/example/repo.git
 ```
 git pull origin master
 ```
+## To create a branch
+```
+git branch sample-branch
+```
+## To delete a branch
+```
+git branch -d sample-branch
+```
+## Stash the changes 
+```
+git stash save "WIP"
+```
+## Apply changes back from stash
+```
+git stash apply
+```
+## Force delete a local branch
+```
+git branch -D sample-branch
+```
