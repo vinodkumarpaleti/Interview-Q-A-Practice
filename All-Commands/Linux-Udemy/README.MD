@@ -40,7 +40,7 @@ cp -R test-folder /tmp/test-folder
 ```
 ## Finding files and directories
 * locate file 
-- It will locate the file within file system
+  - It will locate the file within file system
 - We have to update database (ex: updatedb)
 - Also make sure you have mlocate package installed.
 ```
