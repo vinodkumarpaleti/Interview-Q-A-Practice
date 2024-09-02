@@ -17,7 +17,7 @@ docker build -t my-image .
 ```
 docker run -itd -p 8080:80 image
 ```
-## Run the containers fron image
+## Run the containers from image
 ```
 docker run -i -p 80:8080 --name container1 my-image
 docker run -i -p 80:8081 --name conatainer2 my-image

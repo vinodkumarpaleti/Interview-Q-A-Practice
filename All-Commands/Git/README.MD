@@ -1,4 +1,4 @@
-### Merge Conflicts
+### Resolve Merge Conflicts
 ## Switch to the branch you are merging into
 ```
 git checkout <branch-to-merge>
@@ -17,8 +17,8 @@ git merge --continue
 ```
 ## To clone the repository from specific branch
 ```
-git clone -b <branch-name> <repository-url>
-git clone -b master http://github.com/example/repo.git
+syn: git clone -b <branch-name> <repository-url>
+ex: git clone -b master http://github.com/example/repo.git
 ```
 ## git pull
 ```

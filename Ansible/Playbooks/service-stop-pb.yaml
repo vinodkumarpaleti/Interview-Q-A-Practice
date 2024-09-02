@@ -1,0 +1,9 @@
+---
+- name: Stop NGINX service
+  hosts: your_remote_hosts_group
+  become: yes
+  tasks:
+    - name: Stop NGINX service
+      service:
+        name: nginx
+        state: stopped

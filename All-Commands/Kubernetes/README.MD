@@ -20,7 +20,7 @@ kubectl apply -f deployment.yaml
 ```
 ## Delete the deployment to the kubernetes cluster
 ```
-kubectl apply -f deployment.yaml
+kubectl delete -f deployment.yaml
 ```
 ## To check the status of Pods, Deployments and services
 ```
