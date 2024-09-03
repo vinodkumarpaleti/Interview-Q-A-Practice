@@ -119,8 +119,67 @@ sudo chgrp root test-file
 * tail : To get bottom 10 lines of the o/p file.
 ```
 cat test-file
-* ls -l | more test-file 
+ls -l | more test-file 
+ls -l | less test-file
 ls -l | head test-file
 ls -l | tail test-file
-ls -l | less test-file
 ```
+## Filters and Text processing commands
+* cut : It allows you to cut the o/p.
+* awk : It allows you to list by the column
+* grep : It allows you to search by the keywords
+* sort : It allows you to sortout the output in alphabetical order.
+* uniq : It eliminates the duplicates
+* wc (word count) : It tells total number of words , letter, and lines of a file.
+```
+cut -c1 sample
+cut -c1 2,4 sample
+cut -c1, 2,4 sample
+cut -c1-3
+cut -c1-3 sample
+cut -b1-3 sample
+cut -b1-3 /home/ec2-user/test1/sample
+cut -d: -f 6 /etc/passwd
+cut -d: -f 6-7 /etc/passwd
+ls -l | cut -c2-4
+```
+## awk: It is a utility designed for data extraction. i.e extract fields from a file.
+```
+awk --version
+```
+* print the first column of a file
+```
+awk '{print $1}' sample
+```
+* print the second column of a file
+```
+awk '{print $2}' sample
+```
+* list 1st and 3rd column of o/p
+```
+ls -l | awk '{print $1, $3}' sample
+```
+* prints last column of o/p
+```
+ls -l | awk '{print $NF}' sample
+```
+* search for a spicific word
+```
+awk '/pipeline/ {print}' sample
+```
+* Prints first field of a file '/etc/passwd'
+```
+awk -F: '{print $1}' /etc/passwd
+```
+* Replace the word fields
+```
+echo "hi vinod" | awk '{$2 = "Adam"; print $0}'
+```
+* get lines more than 15 byts
+```
+awk 'length ($0) > 15' sample
+```
+```
+ls -l | awk '{print NF}'
+```
+
