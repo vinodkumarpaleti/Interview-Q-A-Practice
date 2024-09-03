@@ -219,3 +219,26 @@ grep -v GitHub sample
 ```
 grep GitHub sample | awk '{print $1}'
 ```
+## sort/uniq
+* sort command sorts in alphabetical order
+```
+sort -r sample-file     //sort in reverse alphabrtical order
+```
+```
+sort -k2 sample-file    //sort by field number
+```
+* uniq command filters out the repeated or duplicate lines
+```
+uniq sample
+```
+## WC - Word Count
+* It reads either standard input or list of files and genarates newline, word, and byte count. 
+```
+wc --version
+```
+```
+wc sample-file      // It get the file line count, word count and byte count.
+```
+```
+wc -l sample        // It gives no of lines in a file
+```
