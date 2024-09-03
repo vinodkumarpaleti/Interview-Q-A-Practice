@@ -254,3 +254,12 @@ ls -l | wc -l       // no of files
 ```
 grep GitHub | wc -l sample      // get the no of keyword lines
 ```
+## Comare files (diff, cmp)
+* diff : It compares line by line
+```
+diff sample-file1 sample-file2
+```
+* cmp : It compares byte by byte
+```
+cmp sample-file1 sample-file2
+```
