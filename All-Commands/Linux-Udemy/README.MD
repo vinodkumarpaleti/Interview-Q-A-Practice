@@ -242,3 +242,15 @@ wc sample-file      // It get the file line count, word count and byte count.
 ```
 wc -l sample        // It gives no of lines in a file
 ```
+```
+wc -w sample        // It gives no.of words in a file
+```
+```
+wc -c sample        // It gives no.of byts
+```
+```
+ls -l | wc -l       // no of files
+```
+```
+grep GitHub | wc -l sample      // get the no of keyword lines
+```
