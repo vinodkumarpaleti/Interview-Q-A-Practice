@@ -119,7 +119,7 @@ sudo chgrp root test-file
 * tail : To get bottom 10 lines of the o/p file.
 ```
 cat test-file
-ls -l | more test-file 
+* ls -l | more test-file 
 ls -l | head test-file
 ls -l | tail test-file
 ls -l | less test-file
