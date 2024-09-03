@@ -182,4 +182,40 @@ awk 'length ($0) > 15' sample
 ```
 ls -l | awk '{print NF}'
 ```
-
+## grep (global regular expression print)
+* process line by line and prints any lines which match a specified pattern
+```
+grep --version
+```
+* It search for a keyword GitHub
+```
+grep GitHub sample
+```
+* It gives no.of times the word is repeated
+```
+grep -c GitHub sample
+```
+* It search for the keyword vkumar
+```
+grep vkumar /etc/vkumar
+```
+* It search for the keyword ec2-user
+```
+grep ec2-user /etc/passwd
+```
+* search for a keyword and ignores the case-sensitivity
+```
+grep -i github sample
+```
+* Display matched number and its line numbers
+```
+grep -n github sample
+```
+* It displays everything but not the keyword
+```
+grep -v GitHub sample
+```
+* Search for a keyword and prints the first field
+```
+grep GitHub sample | awk '{print $1}'
+```
