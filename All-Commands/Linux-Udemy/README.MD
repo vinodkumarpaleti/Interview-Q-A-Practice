@@ -267,3 +267,16 @@ cmp sample-file1 sample-file2
 * tar : tar takes the bunch of files together and put it in one file
 * gzip : compress the files
 * gzip -d (or) gunzip : to uncompress the file.
+```
+tar cvf vinod.tar /home/kumar   // All files and directories are zipped (or) compress in vinod.tar file from home directory.
+```
+* unzip the file in another directory
+```
+tar xvff vinod.tar  //extract everything
+```
+```
+gzip vinod.tar  // It compress the file
+```
+```
+gzip -d vinod.tar.gz    //uncompree
+```
