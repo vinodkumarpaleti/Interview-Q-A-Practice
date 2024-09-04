@@ -14,3 +14,22 @@
   * /keyword-name - search for specific keyword in vi editor
   * :q! - quit without saving
   * :wq! - quit and save
+## sed command
+* replace a string in a file with a new string
+* find and delete a line
+* to replace a tabs with spaces
+* substitute within vi editor
+
+```
+sed 's/vinod/kumar/g' sample-file // here the changed name shows on the o/p only not on existing file.
+// here 'g' means global it will replace everywhere
+```
+```
+sed -i 's/vinod/kumar/g' sample-file  // i-means it will insert into a file.
+```
+```
+sed '/Vinod/d' sample-file  //It will delete all the lines starts with Vinod.
+```
+```
+sed -i '1d' samplr-file //deletes 1st line
+```
