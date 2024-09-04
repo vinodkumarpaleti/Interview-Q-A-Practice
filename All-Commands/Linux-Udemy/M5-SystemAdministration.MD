@@ -22,7 +22,7 @@
 
 ```
 sed 's/vinod/kumar/g' sample-file // here the changed name shows on the o/p only not on existing file.
-// here 'g' means global it will replace everywhere
+                                  // here 'g' means global it will replace everywhere
 ```
 ```
 sed -i 's/vinod/kumar/g' sample-file  // i-means it will insert into a file.
