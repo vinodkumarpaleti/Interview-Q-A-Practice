@@ -44,3 +44,20 @@ sed -i '1d' samplr-file //deletes 1st line
 * **/etc/passwd** - This file has all user’s attributes
 * **/etc/shadow** - This file contains encrypted user password and password policy
 * **/etc/group** - All group and user group information
+
+```
+userdel spiderman
+```
+```
+userdel -r spiderman
+```
+```
+groupadd nonewgroup
+```
+```
+cat /etc/group
+```
+```
+groupdel nonewgroup
+```
+
