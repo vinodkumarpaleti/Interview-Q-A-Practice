@@ -33,3 +33,14 @@ sed '/Vinod/d' sample-file  //It will delete all the lines starts with Vinod.
 ```
 sed -i '1d' samplr-file //deletes 1st line
 ```
+## user account management
+* useradd - To create a new user in Linux. A different options can be used to modify userId, home directory etc.
+* userdel-This command is used to delete the user. Please note this command alone will not delete the user home directory. You will have to use option –r to delete user home directory
+* groupadd-Creates a new group
+* groupdel-Removes an existing group
+* usermod-Modify user attributes such as user home directory, user group, user ID etc.
+
+## User Files
+* /etc/passwd - This file has all user’s attributes
+* /etc/shadow - This file contains encrypted user password and password policy
+* /etc/group - All group and user group information
