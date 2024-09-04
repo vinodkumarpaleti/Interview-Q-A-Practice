@@ -263,3 +263,7 @@ diff sample-file1 sample-file2
 ```
 cmp sample-file1 sample-file2
 ```
+## Compress and un-compressess files
+* tar : tar takes the bunch of files together and put it in one file
+* gzip : compress the files
+* gzip -d (or) gunzip : to uncompress the file.
