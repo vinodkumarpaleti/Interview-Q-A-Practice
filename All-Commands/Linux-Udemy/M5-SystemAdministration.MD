@@ -114,4 +114,34 @@ cal 9 1997
 ```
 cal 2016  //displays all months
 ```
+## Process and Service commands
+### systemctl (or) service
+* ps: It checks what are the process running in linux system.
+* top: It will show all the process running in the system       and memory information being used by the process.
+* kill: It kills the process.
+* crontab: It schedules these applications and process.
+* at: It schedules one time bases.
+```
+systemctl start nginx
+```
+```
+systemctl enable nginx
+```
+```
+systemctl stop nginx
+```
+```
+systemctl restart tomcat
+```
+```
+systemctl list-units --all  //It give all active and inactive services
+```
+```
+systemctl status nginx
+```
+```
+systemctl disable nginx
+```
+
+
 
