@@ -206,4 +206,39 @@ crontab -l
 ```
 crontab -r
 ```
-
+## system monitoring commands
+* **top**: memory utilization
+* **df**: It gives disk partition information
+* **dmesg**: It gives the system related warnings error msgs, and failures.
+* **iostat1**: i/p and o/p statistics
+* **netstat**: It gives gateway information and subnet mask.
+* **free**: It gives physical and virtual memory.
+* **cat /proc/cpuinfo**: To read the file of CPU info
+* **cat /proc/meminfo**: To read the file of memory info
+```
+df -h   
+```
+```
+top
+```
+```
+dmsg | more
+```
+```
+iostat
+```
+```
+iostat 1
+```
+```
+netstat -rnv
+```
+```
+netstat | more
+```
+```
+free
+```
+```
+cat /proc/meminfo
+```
