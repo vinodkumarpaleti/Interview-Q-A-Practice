@@ -192,6 +192,9 @@ top -u vinod  //Shows the tasks/process by users
   pkill   //It kills by the process names
   ```
  * **crontab command**
- *  **crontab**: Is used to schedule the tasks
-
+    *  **crontab**: Is used to schedule the tasks
+    *  **crontab -e**: Edit the crontab
+    *  **crontab -l**: List the crontab entries
+    *  **crontab -r**: Remove the crontab
+    *  **crond**: crontab daemon/service that manages scheduling
 
