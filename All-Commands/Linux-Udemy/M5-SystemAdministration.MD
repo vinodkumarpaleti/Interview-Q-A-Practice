@@ -67,4 +67,24 @@ groupdel nonewgroup
 su - <user-name>
 su - vinod
 ```
-## monior users
+## monitor users(who, last, w, id)
+* who: It gives how many people are logged in and their userid, time.
+* last: It gives all the users that be logged in from day.
+* w: It gives the how many people login along with additional details.
+* finger: It gives system details and protocols
+* id: it gives the userid
+```
+last
+```
+```
+last | more
+```
+```
+last | awk '{print $1}' //It will give first column
+```
+```
+last | awk '{print $1}' | sort | uniq //filter the duplicates
+```
+```
+id vinod
+```
