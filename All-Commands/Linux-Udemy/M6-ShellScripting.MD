@@ -66,3 +66,61 @@ echo "my last name is $c"
 chmod a+x file-name //apply permissions
 ./file-name //run script
 ```
+* Shell script for input and output
+```
+#! /bin/bash
+echo "hello, I'm vinod"
+echo
+echo "what is your name?"
+read name
+echo
+echo Hello &name
+```
+* If, then conditions
+```
+#! /bin/bash
+count=100
+if[$count -eq 100]
+then
+ echo count is 100
+else
+ echo count is not 100
+fi
+```
+* script for file exists or not in perticuler directory
+```
+#! /bin/bash
+clear
+if[-e /home/vinod/sample.txt]   //e: file exist or not
+then
+ echo "File exist"
+else
+`echo "File does not exist"
+fi
+```
+* script for "for loop"
+  * for: keep running until condition satisfied 
+```
+#! /bin/bash
+fir i in 12345
+do
+echo "welcome $i times"
+done
+```
+* do-while scripts
+  * The while statement continuously executes a block of statements while a perticular condition true or met.
+  * Run a script untill 2pm
+  ```
+  #! /bin/bash
+  count-0
+  num=10
+  while[$count -lt 10]
+  do 
+    echo$num seconds left to stop this process $1
+    sleep 1
+    num='expr $count-1'
+    count='expr $count+1'
+    done
+    echo
+    echo $1 process is stopped
+
