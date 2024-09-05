@@ -60,4 +60,11 @@ cat /etc/group
 ```
 groupdel nonewgroup
 ```
-
+## switch users and sudo access
+* sudo : If you do not have root privilages, but you still need to run certain commands use sudo followed by command.
+* visuso: It edits sudoers file(wheel group)
+```
+su - <user-name>
+su - vinod
+```
+## monior users
