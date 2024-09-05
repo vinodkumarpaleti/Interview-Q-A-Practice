@@ -61,18 +61,18 @@ cat /etc/group
 groupdel nonewgroup
 ```
 ## switch users and sudo access
-* sudo : If you do not have root privilages, but you still need to run certain commands use sudo followed by command.
-* visuso: It edits sudoers file(wheel group)
+* **sudo** : If you do not have root privilages, but you still need to run certain commands use sudo followed by command.
+* **visuso**: It edits sudoers file(wheel group)
 ```
 su - <user-name>
 su - vinod
 ```
 ## monitor users(who, last, w, id)
-* who: It gives how many people are logged in and their userid, time.
-* last: It gives all the users that be logged in from day.
-* w: It gives the how many people login along with additional details.
-* finger: It gives system details and protocols
-* id: it gives the userid
+* **who**: It gives how many people are logged in and their userid, time.
+* **last**: It gives all the users that be logged in from day.
+* **w**: It gives the how many people login along with additional details.
+* **finger**: It gives system details and protocols
+* **id**: it gives the userid
 ```
 last
 ```
@@ -89,13 +89,13 @@ last | awk '{print $1}' | sort | uniq //filter the duplicates
 id vinod
 ```
 ## system utility commands (date,uptime,hostname,uname,which,cal,bc)
-* date: displays the current date
-* uptime: running time
-* hostname: which system you are logged in
-* uname: OS information
-* which: location of the command that.
-* cal: It gives the calender information
-* bc: binary calculation.
+* **date**: displays the current date
+* **uptime**: running time
+* **hostname**: which system you are logged in
+* **uname**: OS information
+* **which**: location of the command that.
+* **cal**: It gives the calender information
+* **bc**: binary calculation.
 ```
 hostname
 ```
@@ -116,11 +116,11 @@ cal 2016  //displays all months
 ```
 ## Process and Service commands
 ### systemctl (or) service
-* ps(process status): It checks what are the process running in linux system.
-* top: It will show all the process running in the system       and memory information being used by the process.
-* kill: It kills the process.
-* crontab: It schedules these applications and process.
-* at: It schedules one time bases.
+* **ps(process status)**: It checks what are the process running in linux system.
+* **top**: It will show all the process running in the system       and memory information being used by the process.
+* **kill**: It kills the process.
+* **crontab**: It schedules these applications and process.
+* **at**: It schedules one time bases.
 ```
 systemctl start nginx
 ```
@@ -142,7 +142,7 @@ systemctl status nginx
 ```
 systemctl disable nginx
 ```
-* ps-process status command
+* **ps**-process status command
 ```
 ps  //It shows process of current shell
 ```
@@ -166,7 +166,7 @@ top   //It is used to show the linux process and it provides real-time view of r
 top -u vinod  //Shows the tasks/process by users
 ```
 * kill -command
-  * kill: Is used to terminate the processes manually
+  * **kill**: Is used to terminate the processes manually
   ```
   kill -l //To get a list of all signal names or signal number
   ```
