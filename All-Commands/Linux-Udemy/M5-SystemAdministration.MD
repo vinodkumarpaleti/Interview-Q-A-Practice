@@ -197,4 +197,13 @@ top -u vinod  //Shows the tasks/process by users
     *  **crontab -l**: List the crontab entries
     *  **crontab -r**: Remove the crontab
     *  **crond**: crontab daemon/service that manages scheduling
+```
+crontab -e  //write (21 16 * 10 * echo "My crontab entry" > mycrontab)
+```
+```
+crontab -l
+```
+```
+crontab -r
+```
 
