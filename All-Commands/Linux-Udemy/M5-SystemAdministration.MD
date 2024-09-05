@@ -96,4 +96,22 @@ id vinod
 * which: location of the command that.
 * cal: It gives the calender information
 * bc: binary calculation.
+```
+hostname
+```
+```
+uname -a
+```
+```
+which date
+```
+```
+cal
+```
+```
+cal 9 1997
+```
+```
+cal 2016  //displays all months
+```
 
