@@ -192,4 +192,6 @@ top -u vinod  //Shows the tasks/process by users
   pkill   //It kills by the process names
   ```
  * **crontab command**
+ *  **crontab**: Is used to schedule the tasks
+
 
