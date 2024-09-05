@@ -88,3 +88,12 @@ last | awk '{print $1}' | sort | uniq //filter the duplicates
 ```
 id vinod
 ```
+## system utility commands (date,uptime,hostname,uname,which,cal,bc)
+* date: displays the current date
+* uptime: running time
+* hostname: which system you are logged in
+* uname: OS information
+* which: location of the command that.
+* cal: It gives the calender information
+* bc: binary calculation.
+
