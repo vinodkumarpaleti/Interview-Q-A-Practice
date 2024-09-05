@@ -242,3 +242,61 @@ free
 ```
 cat /proc/meminfo
 ```
+## system maintenance commands
+* **shutdown**: shutdown the linux system
+* **init 0-6**: 0-is for shutdown, 6-is for reboot, 3-is for multi-user mode.
+* **reboot**: reboot linux machine.
+* **halt**: It shutdown the system if there is any process running that needs some time to bring down other process.
+```
+init
+```
+```
+reboot
+```
+```
+halt
+```
+## changing system hostname
+* **hostname**: hostname is the linux machine that assigned during the first install.
+```
+hostnamectl set-hostname my-new-hostname
+```
+## Finding system information
+* To find which system you are logged in and which o/s and hardware.
+```
+cat /etc/redhat-release
+```
+```
+uname -a
+```
+```
+dmidecode
+```
+```
+arch  //to find architecture of linux system
+```
+```
+uname -a
+```
+## Environmenta Variables
+* Environment variables are set of defined rules and values to build an environment.
+```
+printenv (or) env //to print all environment variables
+```
+```
+echo $SHELL //to view one environment variable
+```
+```
+export Test=1 //To set env variables
+echo $Test
+```
+```
+vi bashrc //To set env variables permanently
+Test='123'
+export Test
+```
+```
+vi /etc/profile (or) /etc/bashrc
+Test='123'
+export Test
+```
