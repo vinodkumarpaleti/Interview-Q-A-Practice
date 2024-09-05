@@ -142,7 +142,7 @@ systemctl status nginx
 ```
 systemctl disable nginx
 ```
-* **ps**-process status command
+**ps-process status command**
 ```
 ps  //It shows process of current shell
 ```
@@ -158,14 +158,14 @@ ps -ef  //It shows all running process in full format listing.
 ```
 ps -u vinod //It shows all process by username
 ```
-* top-command
+**top-command**
 ```
 top   //It is used to show the linux process and it provides real-time view of running system.
 ```
 ```
 top -u vinod  //Shows the tasks/process by users
 ```
-* kill -command
+**kill -command**
   * **kill**: Is used to terminate the processes manually
   ```
   kill -l //To get a list of all signal names or signal number
@@ -191,5 +191,5 @@ top -u vinod  //Shows the tasks/process by users
   ```
   pkill   //It kills by the process names
   ```
-
+ **crontab command**
 
