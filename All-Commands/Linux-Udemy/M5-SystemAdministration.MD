@@ -116,7 +116,7 @@ cal 2016  //displays all months
 ```
 ## Process and Service commands
 ### systemctl (or) service
-* ps: It checks what are the process running in linux system.
+* ps(process status): It checks what are the process running in linux system.
 * top: It will show all the process running in the system       and memory information being used by the process.
 * kill: It kills the process.
 * crontab: It schedules these applications and process.
@@ -142,6 +142,54 @@ systemctl status nginx
 ```
 systemctl disable nginx
 ```
-
+* ps-process status command
+```
+ps  //It shows process of current shell
+```
+```
+ps -e //It shows all running processes
+```
+```
+ps aux  //It shows all running process in BSD format
+```
+```
+ps -ef  //It shows all running process in full format listing.
+```
+```
+ps -u vinod //It shows all process by username
+```
+* top-command
+```
+top   //It is used to show the linux process and it provides real-time view of running system.
+```
+```
+top -u vinod  //Shows the tasks/process by users
+```
+* kill -command
+  * kill: Is used to terminate the processes manually
+  ```
+  kill -l //To get a list of all signal names or signal number
+  ```
+  ```
+  kill <PID-NUMBER>`//kill a process with default signal
+  ```
+  ```
+  kill -1 <pid>  //Restart
+  ```
+  ```
+  kill -2 <pid>  //Interrupt from the keyboard just like ctrl+c
+  ```
+  ```
+  kill -9  <pid> //forcefully kill the process
+  ```
+  ```
+  kill -15  <pid> //kill a process gracefully
+  ```
+  ```
+  killall //It kills all the process
+  ```
+  ```
+  pkill   //It kills by the process names
+  ```
 
 
