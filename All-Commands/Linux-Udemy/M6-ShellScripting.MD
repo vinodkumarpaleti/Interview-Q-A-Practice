@@ -123,4 +123,22 @@ done
     done
     echo
     echo $1 process is stopped
-
+    ```
+## check remote server connectivity
+* scrip to check the status of remote hosts
+```
+#! /bin/bash
+# Author: Vinod Kumar   //comment
+# Date: dd/mm/yyy
+ping -c1 192.168.1.1
+    if[$? -eq 0]    //$?-is o/p of all the commands that you ran.
+    then
+    echo "Ok"
+    else
+    echo "not Ok"
+    fi
+done
+```
+```
+./ping-all  //run this script
+```
