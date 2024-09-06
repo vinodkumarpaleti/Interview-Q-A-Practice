@@ -90,3 +90,19 @@
    ```
    rpm -qa     //It will check package is available are not locally
    ```
+   ## Hostname or IP lookup
+   * **nslookup**: It gives IP address and domain name or DNS lookup.
+   ```
+   nslookup www.facebook.com
+   ```
+   ```
+   dig www.google.com
+   ```
+   ## Tracing Network Traffic(traceroute)
+   * The **traceroute** command is used to map the journey that a packet of information undertakes from its source to its destination.
+   ```
+   traceroute www.google.com
+   ```
+   ```
+   netstat -rnv
+   ```
