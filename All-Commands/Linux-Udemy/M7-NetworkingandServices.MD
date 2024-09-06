@@ -26,3 +26,21 @@
   ```
   more /etc/resolv.conf
   ```
+  ## Network Commands
+  * **ping**
+  * **ifconfig**
+  * **ifup or ifdown**
+  * **netstat**: It tells you the gateway and how your traffic is flow from interface
+  * **tcpdump**: It traces every single transation that leaving and coming into system.
+  ```
+  ping www.google.com   //To check the server is reachable or not
+  ```
+  ```
+  ifconfig
+  ```
+  ```
+  netstat -rnv
+  ```
+  ```
+  tcpdump -i enpos3
+  ```
