@@ -142,7 +142,7 @@ kubectl logs <Pod_name> -n default -c  <container_name>
 ```
 kubectl exec -it <Pod_name> -n default bash
 ```
-## To list environment details inside pod.
+## list environment details inside pod.
 ```
 kubectl get sa -n default
 sa(service account)
