@@ -1,5 +1,5 @@
 
-## CRON Syntax
+## CRON Job Syntax
 ```
 */5 * * * * ---->This will execute Every 5 minutes
 '*/5' --> Every 5 minutes
