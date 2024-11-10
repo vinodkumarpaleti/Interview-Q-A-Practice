@@ -3,7 +3,7 @@
 ```
 docker ps -l 
 ```
-## To list only the ID's of running containers
+## To list only the ID's of running container
 ```
 docker ps --quit
 OR
