@@ -3,6 +3,6 @@ terraform {
       bucket = "tfstate-s3-bucket"
       key = "tfstate"
       region = "us-east-1"
-      dynamodb_table = "tfstate-locing"
+      dynamodb_table = "tfstate-locking"
     }
 }
