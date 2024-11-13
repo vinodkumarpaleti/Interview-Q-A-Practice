@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-deployment
+spec:
+  replicas: 3 # Number of pods to run
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-app-container
+        image: my-app-image:latest # Replace with your container image
+        ports:
+        - containerPort: 80 # Replace with the port your app is exposing
+        env:
+        - name: ENV_VAR_NAME # Replace with any environment variables your app may need
+          value: "some_value" # Set the value of the environment variable
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app-service
+spec:
+  selector:
+    app: my-app # This matches the label defined in the deployment
+  ports:
+  - protocol: TCP
+    port: 80 # The port that will be exposed on the service
+    targetPort: 80 # The port on which the container is listening
+  clusterIP: None # ClusterIP is used for internal communication
+
+#Explanation:
+#Deployment:
+#replicas: 3: This specifies that Kubernetes should run three copies of the container.
+#selector: Ensures the Deployment manages pods with the label app: my-app.
+#template: Defines the pod spec. The pod will have a container running the image my-app-image:latest on port 80.
+#Environment variables can be added in the env section, if necessary.
+
+#Service:
+#The service is of type ClusterIP, which means it is accessible only within the cluster (useful for internal communication).
+#The service will select the pods that match the label app: my-app (from the deployment).
+#port: 80 is the port that clients within the cluster can use to access the app.
+#targetPort: 80 is the container's port that will receive traffic.
