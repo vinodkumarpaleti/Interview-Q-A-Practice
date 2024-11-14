@@ -30,3 +30,7 @@ systemctl list-units --type=service --state --all
 ```
 systemctl list-unit-files --type=service
 ```
+## sed command
+```
+sed -i 's/old_text/new_text/' filename
+```
