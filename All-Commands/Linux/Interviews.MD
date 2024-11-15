@@ -34,3 +34,7 @@ systemctl list-unit-files --type=service
 ```
 sed -i 's/old_text/new_text/' filename
 ```
+## replace text by using sed command
+```
+sed 's/old_word/new_word/g' file.txt
+```
