@@ -1,0 +1,18 @@
+# Example Playbook: Patch and Reboot for RHEL/CentOS
+- name: Patch and update RHEL/CentOS servers
+  hosts: all
+  become: true
+  tasks:
+    - name: Update all packages
+      yum:
+        name: '*'
+        state: latest
+
+    - name: Check if a reboot is required
+      shell: needs-restarting -r || echo 0
+      register: reboot_required
+      failed_when: reboot_required.rc not in [0, 1]
+
+    - name: Reboot the server if required
+      reboot:
+      when: reboot_required.rc == 1
